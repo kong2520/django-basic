@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}- List{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="alert alert">
+            Do you want to delete {{ object }}?
+        </div>
+        <!--action 아무것도 없으면 현재페이지로 보냄-->
+        <form action="" method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="confirm">
+        </form>
+    </div>
+</div>
+{% endblock %}

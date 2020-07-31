@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}- account{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="alert alert-info">
+                Success register, {{ new_user.username }} Welcome
+                <a class="btn btn-info" href="#">Move to Main</a>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}- Login{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="alert alert-info">enter your login</div>
+        </div>
+        <a href="{% url 'accounts:login' %}" class="btn btn-primary">로그인</a>
+    </div>
+{% endblock %}
